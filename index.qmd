@@ -1,0 +1,16 @@
+---
+title: "Austin Horton"
+image: austinheadshot.jpg
+about:
+  template: jolla
+  links: 
+  - icon: github
+    text: Github
+    href: https:github.com/austin-horton
+  - icon: linkedin
+    text: LinkedIn
+    href: https://linkedin.com/in/austin-l-horton/
+  - icon: inboxes
+    text: Contact
+    href: mailto:alh102@uark.edu
+---
