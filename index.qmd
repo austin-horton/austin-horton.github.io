@@ -14,3 +14,5 @@ about:
     text: Contact
     href: mailto:alh102@uark.edu
 ---
+
+Pursuing a degree in Industrial Engineering and Operations Analytics at the University of Arkansas, with an expected graduation in May 2029. Today, I am a student ambassador for the College of Engineering where I am able to help incoming students feel more confident, and excited about their future at The University of Arkansas. After I complete my undergraduate studies, I plan to work in operations research or supply chain.

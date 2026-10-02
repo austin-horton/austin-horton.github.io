@@ -4,15 +4,16 @@ project:
 
 website:
 
-  title: "austinhortoneport"
+  title: "Austin Horton"
   navbar:
+    background: "#14213D"
     right:
       - text: Home
         href: index.qmd
-      - text: Projects
-        href: projects.qmd
       - text: Resume
         href: resume.qmd
+      - text: Projects
+        href: projects.qmd
 format:
   html:
     theme:

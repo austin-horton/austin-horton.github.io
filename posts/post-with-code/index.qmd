@@ -1,13 +1,9 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "First Post Template"
+author: "Austin Horton"
 date: "2026-09-28"
-categories: [news, code, analysis]
-image: "image.jpg"
+categories: [N/A]
+image: "Uark.jpg"
 ---
 
-This is a post with executable code.
-
-```{r}
-1 + 1
-```
+I will update this once I have a project that I can post.
