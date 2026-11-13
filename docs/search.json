@@ -2,51 +2,51 @@
   {
     "objectID": "posts/DataVisualization/DataVisualization.html",
     "href": "posts/DataVisualization/DataVisualization.html",
-    "title": "Data Visualization on Rocket Launches",
+    "title": "Data Visualization Project",
     "section": "",
-    "text": "Jordan Sheely\nAustin Horton\nElliott Boyd\nCarter Flynt\nJace Keller"
+    "text": "Jordan Sheely\nAustin Horton\nElliott Boyd\nCarter Flynt\nJace Keller\n\n\n\n\nThe data set we covered was a Kaggle data set on Space Mission Launches. It includes all of the space missions that have been launched since the beginning of the Space Race in 1957.\nDataset\n\n\n\nSpace Launches\n\n\n\n\n\n\n\n\nSpace Launches\n\n\nTo make the scatter plot, we plotted the number of launches a country did compared to the success rate of those launches. This was done by making a pivot table that looked at launch status against the origin. And the success rate divided by total launches. We found that the variables seem to follow a logarithmic distribution. This is interesting because the world’s captivation with space has shifted a lot over time.\n\n\n\n\n\n\nSpace Launches\n\n\nTo create this bar chart, we looked at total rocket launches for the most active launching countries. A pivot table was made comparing each country to their total number of launches. There is a clear skew for Russia and USA indicating they have a much higher presence in space launches. This is interesting because it shows the scope of just how many rockets are have been launched by these countries.\n\n\n\n\n\n\nSpace Launches\n\n\nThe distribution was determined by analyzing the count of annual rocket launches. After parsing the data to keep only relevant information, a pivot table was used to organize information. A graph was then made to represent count vs year. This is interesting because it shows how the iteration process and amount of launches interact with one another and why space is a trial and error industry.\n\n\n\n\n\n\nSpace Launches\n\n\nThe distribution was determined by analyzing the adjusted price of each rocket launch. By using the cost in a certain year and the CPI (each year’s inflation to 2025), the prices were then able to be compared. Then, the count of each rocket launch was combined into bins. This was interesting to see the distribution and also to see how expensive rockets were even back in the early 60’s.\nImportant note: Many rockets did not have a listed price for the launch, so those launches were excluded."
   },
   {
     "objectID": "posts/DataVisualization/DataVisualization.html#team-members",
     "href": "posts/DataVisualization/DataVisualization.html#team-members",
-    "title": "Data Visualization on Rocket Launches",
+    "title": "Data Visualization Project",
     "section": "",
     "text": "Jordan Sheely\nAustin Horton\nElliott Boyd\nCarter Flynt\nJace Keller"
   },
   {
     "objectID": "posts/DataVisualization/DataVisualization.html#data-set",
     "href": "posts/DataVisualization/DataVisualization.html#data-set",
-    "title": "Data Visualization on Rocket Launches",
-    "section": "Data Set",
-    "text": "Data Set\nThe dataset we analyzed comes from Kaggle’s Space Mission Launches dataset. It includes space missions launched from the beginning of the Space Race in 1957 onward.\nSpace Mission Launches Dataset"
+    "title": "Data Visualization Project",
+    "section": "",
+    "text": "The data set we covered was a Kaggle data set on Space Mission Launches. It includes all of the space missions that have been launched since the beginning of the Space Race in 1957.\nDataset\n\n\n\nSpace Launches"
   },
   {
-    "objectID": "posts/DataVisualization/DataVisualization.html#question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate",
-    "href": "posts/DataVisualization/DataVisualization.html#question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate",
-    "title": "Data Visualization on Rocket Launches",
-    "section": "Question 1: Does a Country’s Number of Space Launches Affect Its Success Rate?",
-    "text": "Question 1: Does a Country’s Number of Space Launches Affect Its Success Rate?\n\n\n\nSpace launch success rate compared to total launches\n\n\nTo create the scatter plot, we compared the total number of launches conducted by each country with the success rate of those launches. We created a pivot table comparing launch status against country of origin and calculated the success rate by dividing successful launches by total launches.\nWe found that the variables appear to follow a logarithmic distribution. This is interesting because it demonstrates how countries with different levels of space-launch activity have experienced different levels of success over time."
+    "objectID": "posts/DataVisualization/DataVisualization.html#does-a-countrys-number-of-space-launches-affect-their-success-rate",
+    "href": "posts/DataVisualization/DataVisualization.html#does-a-countrys-number-of-space-launches-affect-their-success-rate",
+    "title": "Data Visualization Project",
+    "section": "",
+    "text": "Space Launches\n\n\nTo make the scatter plot, we plotted the number of launches a country did compared to the success rate of those launches. This was done by making a pivot table that looked at launch status against the origin. And the success rate divided by total launches. We found that the variables seem to follow a logarithmic distribution. This is interesting because the world’s captivation with space has shifted a lot over time."
   },
   {
-    "objectID": "posts/DataVisualization/DataVisualization.html#question-2-do-certain-countries-launch-more-rockets-than-others",
-    "href": "posts/DataVisualization/DataVisualization.html#question-2-do-certain-countries-launch-more-rockets-than-others",
-    "title": "Data Visualization on Rocket Launches",
-    "section": "Question 2: Do Certain Countries Launch More Rockets Than Others?",
-    "text": "Question 2: Do Certain Countries Launch More Rockets Than Others?\n\n\n\nRocket launches by country\n\n\nTo create this bar chart, we examined the total number of rocket launches for the most active launching countries. We created a pivot table comparing each country with its total number of launches.\nThere is a clear skew toward Russia and the United States, indicating that these countries have historically had a much larger presence in space exploration. This is interesting because it demonstrates the significant difference in launch activity between countries."
+    "objectID": "posts/DataVisualization/DataVisualization.html#do-certain-countries-launch-more-rockets-than-others",
+    "href": "posts/DataVisualization/DataVisualization.html#do-certain-countries-launch-more-rockets-than-others",
+    "title": "Data Visualization Project",
+    "section": "",
+    "text": "Space Launches\n\n\nTo create this bar chart, we looked at total rocket launches for the most active launching countries. A pivot table was made comparing each country to their total number of launches. There is a clear skew for Russia and USA indicating they have a much higher presence in space launches. This is interesting because it shows the scope of just how many rockets are have been launched by these countries."
   },
   {
-    "objectID": "posts/DataVisualization/DataVisualization.html#question-3-what-is-the-historical-distribution-of-annual-space-launches",
-    "href": "posts/DataVisualization/DataVisualization.html#question-3-what-is-the-historical-distribution-of-annual-space-launches",
-    "title": "Data Visualization on Rocket Launches",
-    "section": "Question 3: What Is the Historical Distribution of Annual Space Launches?",
-    "text": "Question 3: What Is the Historical Distribution of Annual Space Launches?\n\n\n\nAnnual space launches\n\n\nWe determined the historical distribution by analyzing the number of rocket launches per year. After filtering the data set to retain the relevant information, we used a pivot table to organize the launch counts by year. We then created a graph comparing the number of launches with the corresponding year.\nThis is interesting because it shows how launch activity has changed throughout the history of space exploration and demonstrates the industry’s growth and evolution."
+    "objectID": "posts/DataVisualization/DataVisualization.html#what-is-the-historical-distribution-of-annual-space-launches",
+    "href": "posts/DataVisualization/DataVisualization.html#what-is-the-historical-distribution-of-annual-space-launches",
+    "title": "Data Visualization Project",
+    "section": "",
+    "text": "Space Launches\n\n\nThe distribution was determined by analyzing the count of annual rocket launches. After parsing the data to keep only relevant information, a pivot table was used to organize information. A graph was then made to represent count vs year. This is interesting because it shows how the iteration process and amount of launches interact with one another and why space is a trial and error industry."
   },
   {
-    "objectID": "posts/DataVisualization/DataVisualization.html#question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches",
-    "href": "posts/DataVisualization/DataVisualization.html#question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches",
-    "title": "Data Visualization on Rocket Launches",
-    "section": "Question 4: What Is the Statistical Distribution of Prices in Rocket Launches?",
-    "text": "Question 4: What Is the Statistical Distribution of Prices in Rocket Launches?\n\n\n\nDistribution of rocket launch prices\n\n\nWe analyzed the adjusted prices of individual rocket launches. Using the original launch cost and the Consumer Price Index (CPI), we adjusted prices for inflation to compare launch costs in 2025 dollars. We then grouped the launch costs into bins to create a frequency distribution.\nThis was interesting because it allowed us to compare the costs of rocket launches across different periods and see just how expensive launches were, even in the early 1960s.\nImportant Note: Many rockets did not have a listed launch price. Therefore, those launches were excluded from this analysis."
+    "objectID": "posts/DataVisualization/DataVisualization.html#what-is-the-statistical-distribution-of-prices-in-rocket-launches",
+    "href": "posts/DataVisualization/DataVisualization.html#what-is-the-statistical-distribution-of-prices-in-rocket-launches",
+    "title": "Data Visualization Project",
+    "section": "",
+    "text": "Space Launches\n\n\nThe distribution was determined by analyzing the adjusted price of each rocket launch. By using the cost in a certain year and the CPI (each year’s inflation to 2025), the prices were then able to be compared. Then, the count of each rocket launch was combined into bins. This was interesting to see the distribution and also to see how expensive rockets were even back in the early 60’s.\nImportant note: Many rockets did not have a listed price for the launch, so those launches were excluded."
   },
   {
     "objectID": "about.html",
@@ -67,6 +67,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Data Visualization on Rocket Launches\n\n\nWhat conclusions can be made from analyzing space mission launches? Our team used pivot tables and charts to explore launch counts, success rates, history, and cost.\n\n\n\nAustin Horton\n\n\nNov 13, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Data Visualization Project\n\n\nWhat conclusions can be made from analyzing space mission launches? Our team used pivot tables and charts to explore launch counts, success rates, history, and cost.\n\n\n\nAustin Horton\n\n\nNov 13, 2026\n\n\n\n\n\n\nNo matching items"
   }
 ]
