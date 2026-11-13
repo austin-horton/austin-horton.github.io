@@ -1,9 +1,0 @@
----
-title: "First Post Template"
-author: "Austin Horton"
-date: "2026-09-28"
-categories: [N/A]
-image: "Uark.jpg"
----
-
-I will update this once I have a project that I can post.
