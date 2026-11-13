@@ -13,11 +13,11 @@ format:
 
 ## Team Members
 
-- Jordan Sheely
-- Austin Horton
-- Elliott Boyd
-- Carter Flynt
-- Jace Keller
+- [Jordan Sheely](https://jordanlsheely.github.io/jordanlsheely/)
+- [Austin Horton](https://austin-horton.github.io/)
+- [Elliott Boyd](elliottboyd.github.io)
+- [Carter Flynt](https://carterflynt.github.io/)
+- [Jace Keller](https://jace1206.github.io/)
 
 ## Data Set
 
