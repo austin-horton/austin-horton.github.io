@@ -27,7 +27,7 @@ The dataset we analyzed comes from Kaggle's Space Mission Launches dataset. It i
 
 ## Question 1: Does a Country's Number of Space Launches Affect Its Success Rate?
 
-![Space launch success rate compared to total launches](Space%20Launches%20FINAL-1.jpg)
+![Space launch success rate compared to total launches](Space%20Launches%20FINAL-2.jpg)
 
 To create the scatter plot, we compared the total number of launches conducted by each country with the success rate of those launches. We created a pivot table comparing launch status against country of origin and calculated the success rate by dividing successful launches by total launches.
 
@@ -35,7 +35,7 @@ We found that the variables appear to follow a logarithmic distribution. This is
 
 ## Question 2: Do Certain Countries Launch More Rockets Than Others?
 
-![Rocket launches by country](Space%20Launches%20FINAL-2.jpg)
+![Rocket launches by country](Space%20Launches%20FINAL-3.jpg)
 
 To create this bar chart, we examined the total number of rocket launches for the most active launching countries. We created a pivot table comparing each country with its total number of launches.
 
@@ -43,7 +43,7 @@ There is a clear skew toward Russia and the United States, indicating that these
 
 ## Question 3: What Is the Historical Distribution of Annual Space Launches?
 
-![Annual space launches](Space%20Launches%20FINAL-3.jpg)
+![Annual space launches](Space%20Launches%20FINAL-4.jpg)
 
 We determined the historical distribution by analyzing the number of rocket launches per year. After filtering the data set to retain the relevant information, we used a pivot table to organize the launch counts by year. We then created a graph comparing the number of launches with the corresponding year.
 
@@ -51,7 +51,7 @@ This is interesting because it shows how launch activity has changed throughout 
 
 ## Question 4: What Is the Statistical Distribution of Prices in Rocket Launches?
 
-![Distribution of rocket launch prices](Space%20Launches%20FINAL-4.jpg)
+![Distribution of rocket launch prices](Space%20Launches%20FINAL-5.jpg)
 
 We analyzed the adjusted prices of individual rocket launches. Using the original launch cost and the Consumer Price Index (CPI), we adjusted prices for inflation to compare launch costs in 2025 dollars. We then grouped the launch costs into bins to create a frequency distribution.
 
