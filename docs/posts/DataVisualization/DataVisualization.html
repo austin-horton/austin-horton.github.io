@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Austin Horton">
+<meta name="dcterms.date" content="2026-11-13">
+<meta name="description" content="What conclusions can be made from analyzing space mission launches? Our team used pivot tables and charts to explore launch counts, success rates, history, and cost.">
 
-<title>DataVisualization – Austin Horton</title>
+<title>Data Visualization on Rocket Launches – Austin Horton</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-3e018e90d55e1becb7e819118a91f8eb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -115,14 +121,31 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">DataVisualization</h1>
-                      </div>
+      <h1 class="title">Data Visualization on Rocket Launches</h1>
+                  <div>
+        <div class="description">
+          What conclusions can be made from analyzing space mission launches? Our team used pivot tables and charts to explore launch counts, success rates, history, and cost.
+        </div>
+      </div>
+                </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Austin Horton </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 13, 2026</p>
+      </div>
+    </div>
     
       
     </div>
@@ -131,7 +154,20 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#team-members" id="toc-team-members" class="nav-link active" data-scroll-target="#team-members">Team Members</a></li>
+  <li><a href="#data-set" id="toc-data-set" class="nav-link" data-scroll-target="#data-set">Data Set</a></li>
+  <li><a href="#question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate" id="toc-question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate" class="nav-link" data-scroll-target="#question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate">Question 1: Does a Country’s Number of Space Launches Affect Its Success Rate?</a></li>
+  <li><a href="#question-2-do-certain-countries-launch-more-rockets-than-others" id="toc-question-2-do-certain-countries-launch-more-rockets-than-others" class="nav-link" data-scroll-target="#question-2-do-certain-countries-launch-more-rockets-than-others">Question 2: Do Certain Countries Launch More Rockets Than Others?</a></li>
+  <li><a href="#question-3-what-is-the-historical-distribution-of-annual-space-launches" id="toc-question-3-what-is-the-historical-distribution-of-annual-space-launches" class="nav-link" data-scroll-target="#question-3-what-is-the-historical-distribution-of-annual-space-launches">Question 3: What Is the Historical Distribution of Annual Space Launches?</a></li>
+  <li><a href="#question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches" id="toc-question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches" class="nav-link" data-scroll-target="#question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches">Question 4: What Is the Statistical Distribution of Prices in Rocket Launches?</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -139,8 +175,68 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="team-members" class="level2">
+<h2 class="anchored" data-anchor-id="team-members">Team Members</h2>
+<ul>
+<li>Jordan Sheely</li>
+<li>Austin Horton</li>
+<li>Elliott Boyd</li>
+<li>Carter Flynt</li>
+<li>Jace Keller</li>
+</ul>
+</section>
+<section id="data-set" class="level2">
+<h2 class="anchored" data-anchor-id="data-set">Data Set</h2>
+<p>The dataset we analyzed comes from Kaggle’s Space Mission Launches dataset. It includes space missions launched from the beginning of the Space Race in 1957 onward.</p>
+<p><a href="https://www.kaggle.com/datasets">Space Mission Launches Dataset</a></p>
+</section>
+<section id="question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-does-a-countrys-number-of-space-launches-affect-its-success-rate">Question 1: Does a Country’s Number of Space Launches Affect Its Success Rate?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Space Launches FINAL-1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Space launch success rate compared to total launches"><img src="Space Launches FINAL-1.jpg" class="img-fluid figure-img" alt="Space launch success rate compared to total launches"></a></p>
+<figcaption>Space launch success rate compared to total launches</figcaption>
+</figure>
+</div>
+<p>To create the scatter plot, we compared the total number of launches conducted by each country with the success rate of those launches. We created a pivot table comparing launch status against country of origin and calculated the success rate by dividing successful launches by total launches.</p>
+<p>We found that the variables appear to follow a logarithmic distribution. This is interesting because it demonstrates how countries with different levels of space-launch activity have experienced different levels of success over time.</p>
+</section>
+<section id="question-2-do-certain-countries-launch-more-rockets-than-others" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-do-certain-countries-launch-more-rockets-than-others">Question 2: Do Certain Countries Launch More Rockets Than Others?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Space Launches FINAL-2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Rocket launches by country"><img src="Space Launches FINAL-2.jpg" class="img-fluid figure-img" alt="Rocket launches by country"></a></p>
+<figcaption>Rocket launches by country</figcaption>
+</figure>
+</div>
+<p>To create this bar chart, we examined the total number of rocket launches for the most active launching countries. We created a pivot table comparing each country with its total number of launches.</p>
+<p>There is a clear skew toward Russia and the United States, indicating that these countries have historically had a much larger presence in space exploration. This is interesting because it demonstrates the significant difference in launch activity between countries.</p>
+</section>
+<section id="question-3-what-is-the-historical-distribution-of-annual-space-launches" class="level2">
+<h2 class="anchored" data-anchor-id="question-3-what-is-the-historical-distribution-of-annual-space-launches">Question 3: What Is the Historical Distribution of Annual Space Launches?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Space Launches FINAL-3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Annual space launches"><img src="Space Launches FINAL-3.jpg" class="img-fluid figure-img" alt="Annual space launches"></a></p>
+<figcaption>Annual space launches</figcaption>
+</figure>
+</div>
+<p>We determined the historical distribution by analyzing the number of rocket launches per year. After filtering the data set to retain the relevant information, we used a pivot table to organize the launch counts by year. We then created a graph comparing the number of launches with the corresponding year.</p>
+<p>This is interesting because it shows how launch activity has changed throughout the history of space exploration and demonstrates the industry’s growth and evolution.</p>
+</section>
+<section id="question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches" class="level2">
+<h2 class="anchored" data-anchor-id="question-4-what-is-the-statistical-distribution-of-prices-in-rocket-launches">Question 4: What Is the Statistical Distribution of Prices in Rocket Launches?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Space Launches FINAL-4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Distribution of rocket launch prices"><img src="Space Launches FINAL-4.jpg" class="img-fluid figure-img" alt="Distribution of rocket launch prices"></a></p>
+<figcaption>Distribution of rocket launch prices</figcaption>
+</figure>
+</div>
+<p>We analyzed the adjusted prices of individual rocket launches. Using the original launch cost and the Consumer Price Index (CPI), we adjusted prices for inflation to compare launch costs in 2025 dollars. We then grouped the launch costs into bins to create a frequency distribution.</p>
+<p>This was interesting because it allowed us to compare the costs of rocket launches across different periods and see just how expensive launches were, even in the early 1960s.</p>
+<p><strong>Important Note:</strong> Many rockets did not have a listed launch price. Therefore, those launches were excluded from this analysis.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -544,6 +640,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
